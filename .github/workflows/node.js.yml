@@ -10,11 +10,9 @@ on:
     branches: [ "main" ]
 
 jobs:
-  container-job:
+  build:
 
     runs-on: ubuntu-latest
-    # Docker Hub image that `container-job` executes in
-    container: node:20-bookworm-slim
 
     strategy:
       matrix:
